@@ -1,4 +1,3 @@
-import { connect } from "react-redux";
 import MovieCard from "../MovieCard/MovieCard";
 import { useSelector, useDispatch } from "react-redux";
 
@@ -57,10 +56,7 @@ function MovieList() {
   );
 }
 
-const mapStateToProps = (state) => ({
-  movies: state.movies,
-  currentPage: state.currentPage,
-});
 
-// eslint-disable-next-line react-refresh/only-export-components
-export default connect(mapStateToProps)(MovieList);
+
+
+export default MovieList;
